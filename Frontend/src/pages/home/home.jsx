@@ -5,15 +5,12 @@ import { Header } from '../../components/header.jsx';
 
 const Home = () => {
     return (
-        <div className='flex sm:h-[450px] md:h-[550px] rounded-lg overflow-hidden bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0'>
-            <div>
-                <Header></Header>
+        <div className=' h-screen flex flex-col items-center justify-between overflow-hidden'>
+            <Header></Header>
+            <div className=' h-3/4 lg:w-3/4 mb-12 my-auto flex rounded-lg overflow-hidden bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0'>
                 <Sidebar />
-
-                {/* <div>
-                </div> */}
+                <MessageContainer />
             </div>
-            <MessageContainer />
         </div>
     )
 }
