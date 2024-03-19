@@ -7,7 +7,7 @@ const Home = () => {
     return (
         <div className=' h-screen flex flex-col items-center justify-between overflow-hidden'>
             <Header></Header>
-            <div className=' h-3/4 lg:w-3/4 mb-12 my-auto flex rounded-lg overflow-hidden bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0'>
+            <div className=' m-6 justify-center w-full sm:w-3/4 h-3/4 lg:w-3/4 mb-12 my-auto flex rounded-lg overflow-hidden bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0'>
                 <Sidebar />
                 <MessageContainer />
             </div>

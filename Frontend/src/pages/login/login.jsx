@@ -1,7 +1,10 @@
 import React from 'react'
 import { Header } from '../../components/header';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Login = () => {
+    const navigate = useNavigate();
+
     return (
         <div className=' w-screen items-center justify-between flex-col h-screen flex'>
             <Header></Header>
@@ -28,9 +31,11 @@ const Login = () => {
                                     <input type="password" className='w-full input input-bordered h-10' placeholder='Enter Password' name="" id="" />
                                 </div>
                             </div>
-                            <a href="#" className='text-sm hover:underline hover:text-blue-600 mt-2 inline-block'>
+                            <p onClick={() => {
+                                navigate("/signup")
+                            }} className='text-sm hover:underline hover:text-blue-600 mt-2 inline-block'>
                                 {"Don't"} have an account?
-                            </a>
+                            </p>
                             <div>
                                 <button className='btn btn-block btn-sm mt-2'>Login</button>
                             </div>

@@ -8,7 +8,7 @@ const Conversation = () => {
                     <img src="https://w7.pngwing.com/pngs/178/595/png-transparent-user-profile-computer-icons-login-user-avatars-thumbnail.png" alt="user avatar" />
                 </div>
             </div>
-            <div className='flex flex-col flex-1'>
+            <div className={`hidden sm:block flex flex-col flex-1`}>
                 <div className='flex gap-3 justify-between'>
                     <p className='font-bold text-gray-200 '>Abhay</p>
                     <span className='text-x1'> 💻</span>

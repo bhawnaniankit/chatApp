@@ -1,8 +1,10 @@
 import React from 'react'
 import GenderCheckbox from "./GenderCheckbox.jsx"
 import { Header } from '../../components/header.jsx'
+import { useNavigate } from 'react-router-dom'
 
 const Signup = () => {
+    const navigate = useNavigate();
     return (
         <div className='w-3/4 flex-col h-full sm:h-screen flex items-center justify-between mx-auto'>
             <Header></Header>
@@ -44,9 +46,9 @@ const Signup = () => {
                                 </div>
                             </div>
                             <GenderCheckbox />
-                            <a href="#" className='text-sm hover:underline hover:text-blue-600 mt-2 inline-block'>
+                            <p onClick={() => { navigate("/login") }} className='text-sm hover:underline hover:text-blue-600 mt-2 inline-block'>
                                 Already have an account?
-                            </a>
+                            </p>
                             <div>
                                 <button className='btn btn-block btn-sm mt-2'>Signup</button>
                             </div>
