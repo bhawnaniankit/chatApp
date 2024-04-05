@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import GenderCheckbox from "./GenderCheckbox.jsx"
 import { Header } from '../../components/header.jsx'
 import { useNavigate } from 'react-router-dom'
-import useSignup from '../../Hooks/useSignup.jsx'
 
 const Signup = () => {
     const [formData, setFormData] = useState({
@@ -27,7 +26,6 @@ const Signup = () => {
                         </h1>
                         <form action="" onSubmit={(e) => {
                             e.preventDefault();
-                            const { loading } = useSignup(formData);
                             navigate("/home")
                             console.log(formData);
                         }}>
